@@ -1,4 +1,4 @@
-const URL = 'http://localhost:3000'
+const URL = 'https://pavanasritechblogbackend.herokuapp.com'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
