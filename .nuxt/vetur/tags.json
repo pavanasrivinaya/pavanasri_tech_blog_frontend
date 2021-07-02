@@ -1,0 +1,14 @@
+{
+  "Logo": {
+    "description": "Auto imported from components/Logo.vue"
+  },
+  "AdminNavBar": {
+    "description": "Auto imported from components/Admin/NavBar.vue"
+  },
+  "ClientNavBar": {
+    "description": "Auto imported from components/Client/NavBar.vue"
+  },
+  "ClientSearch": {
+    "description": "Auto imported from components/Client/search.vue"
+  }
+}
