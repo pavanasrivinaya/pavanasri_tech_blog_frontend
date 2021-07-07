@@ -30,7 +30,11 @@
               </div>
               <!-- end title -->
               <div class="single-post-media">
-                <img :src="post.photo" alt="" class="img-fluid" />
+                <img
+                  :src="`https://pavanatechblog.herokuapp.com/uploads/${post.photo}`"
+                  alt=""
+                  class="img-fluid"
+                />
               </div>
               <!-- end media -->
               <div class="blog-content">

@@ -1,5 +1,5 @@
 <template>
-  <!-- Updating post data -->
+  <!-- creating post data -->
   <div>
     <NavBar />
     <section id="nav-top" class="section">
@@ -8,11 +8,12 @@
         <form>
           <!-- Category DropDown -->
           <div class="col mb-3">
+            <label>Select category</label>
             <select
+              v-model="categoryID"
               class="form-select form-control"
               aria-label="Default select example"
             >
-              <option selected>{{ post.category.type }}</option>
               <option
                 v-for="category in categories"
                 :key="category._id"
@@ -34,7 +35,7 @@
               v-model.trim="$v.title.$model"
               type="text"
               class="form-control"
-              :placeholder="post.title"
+              placeholder="Enter the title"
               style="width: 100%"
               :class="{
                 'is-invalid': $v.title.$error,
@@ -62,7 +63,7 @@
               v-model.trim="$v.description.$model"
               type="text"
               class="form-control"
-              :placeholder="post.description"
+              placeholder="Description of the blog"
               style="height: 100px"
               :class="{
                 'is-invalid': $v.description.$error,
@@ -94,8 +95,8 @@
           <!-- Button -->
           <hr />
           <div class="col">
-            <button type="submit" class="btn btn-primary" @click="onUpdatePost">
-              Add product
+            <button type="submit" class="btn btn-primary" @click="onAddPost">
+              Add post
             </button>
           </div>
         </form>
@@ -125,15 +126,13 @@ export default {
     },
   },
   mixins: [validationMixin],
-  async asyncData({ $axios, params }) {
+  async asyncData({ $axios }) {
     try {
-      const categories = $axios.$get('/api/categories')
-      const post = $axios.$get(`/api/posts/${params.id}`)
-      const [catResponse, postRespone] = await Promise.all([categories, post])
-      console.log(postRespone)
+      const categories = $axios.$get('/api/posts')
+
+      const [catResponse] = await Promise.all([categories])
       return {
         categories: catResponse.categories,
-        post: postRespone.post,
       }
     } catch (err) {
       console.log(err)
@@ -146,7 +145,6 @@ export default {
       description: '',
       selectedFile: '',
       fileName: '',
-      photo: '',
       submitstatus: null,
     }
   },
@@ -156,20 +154,27 @@ export default {
       console.log(this.selectedFile)
       this.fileName = event.target.files[0].name
     },
-    async onUpdatePost() {
-      const data = new FormData()
-      data.append('title', this.title)
-      data.append('description', this.description)
-      data.append('categoryID', this.categoryID)
-      data.append('photo', this.selectedFile, this.selectedFile.name)
-      this.$swal('Successfully Updated')
+    async onAddPost() {
+      this.$v.$touch()
+      if (this.$v.$invalid) {
+        this.submitstatus = 'FAIL'
+      } else {
+        this.submitstatus = 'SUCCESS'
+      }
+      try {
+        const data = new FormData()
+        data.append('title', this.title)
+        data.append('description', this.description)
+        data.append('categoryID', this.categoryID)
+        data.append('photo', this.selectedFile, this.selectedFile.name)
+        this.$swal('Successfully added')
+        const result = await this.$axios.$post('/api/posts', data)
+        this.$router.push('/Admin/adminhome')
 
-      const result = await this.$axios.$put(
-        `/api/posts/${this.$route.params.id}`,
-        data
-      )
-      console.log(result)
-      this.$router.push('/Admin/adminhome')
+        console.log(result)
+      } catch (err) {
+        console.log(err)
+      }
     },
   },
 }

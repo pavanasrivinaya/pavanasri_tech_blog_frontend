@@ -18,7 +18,6 @@ import nuxt_plugin_plugin_0d880bf3 from 'nuxt_plugin_plugin_0d880bf3' // Source:
 import nuxt_plugin_vuesweetalert2_7454b5db from 'nuxt_plugin_vuesweetalert2_7454b5db' // Source: .\\vue-sweetalert2.js (mode: 'client')
 import nuxt_plugin_workbox_38ff8d60 from 'nuxt_plugin_workbox_38ff8d60' // Source: .\\workbox.js (mode: 'client')
 import nuxt_plugin_metaplugin_bc91bc40 from 'nuxt_plugin_metaplugin_bc91bc40' // Source: .\\pwa\\meta.plugin.js (mode: 'all')
-import nuxt_plugin_iconplugin_b3427158 from 'nuxt_plugin_iconplugin_b3427158' // Source: .\\pwa\\icon.plugin.js (mode: 'all')
 import nuxt_plugin_axios_a43f4d78 from 'nuxt_plugin_axios_a43f4d78' // Source: .\\axios.js (mode: 'all')
 import nuxt_plugin_moment_1cd660d4 from 'nuxt_plugin_moment_1cd660d4' // Source: .\\moment.js (mode: 'all')
 
@@ -70,7 +69,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"client","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"stylesheet","href":"..\u002Fcss\u002Fbootstrap.css"},{"rel":"stylesheet","href":"\u002Fcss\u002Ffont-awesome.min.css"},{"rel":"stylesheet","href":"\u002Fstyle.css"},{"rel":"stylesheet","href":"\u002Fcss\u002Fresponsive.css"},{"rel":"stylesheet","href":"\u002Fcss\u002Fcolors.css"},{"rel":"stylesheet","href":"\u002Fcss\u002Fversion\u002Ftech.css"},{"rel":"stylesheet","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Roboto:300,400,500,700|Material+Icons"},{"rel":"shortcut icon","type":"image\u002Fx-icon","href":"\u002Fimages\u002Ffavicon.ico"},{"rel":"stylesheet","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Poppins:300,400,500,600,700"},{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Roboto:100,300,400,500,700,900&display=swap"},{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002F@mdi\u002Ffont@latest\u002Fcss\u002Fmaterialdesignicons.min.css"}],"style":[],"script":[]},
+    head: {"title":"client","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"stylesheet","href":"\u002Fcss\u002Fbootstrap.css"},{"rel":"stylesheet","href":"\u002Fcss\u002Ffont-awesome.min.css"},{"rel":"stylesheet","href":"\u002Fstyle.css"},{"rel":"stylesheet","href":"\u002Fcss\u002Fresponsive.css"},{"rel":"stylesheet","href":"\u002Fcss\u002Fcolors.css"},{"rel":"stylesheet","href":"\u002Fcss\u002Fversion\u002Ftech.css"},{"rel":"stylesheet","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Roboto:300,400,500,700|Material+Icons"},{"rel":"shortcut icon","type":"image\u002Fx-icon","href":"\u002Fimages\u002Ffavicon.ico"},{"rel":"stylesheet","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Poppins:300,400,500,600,700"},{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Roboto:100,300,400,500,700,900&display=swap"},{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002F@mdi\u002Ffont@latest\u002Fcss\u002Fmaterialdesignicons.min.css"}],"style":[],"script":[]},
 
     router,
     nuxt: {
@@ -206,10 +205,6 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_metaplugin_bc91bc40 === 'function') {
     await nuxt_plugin_metaplugin_bc91bc40(app.context, inject)
-  }
-
-  if (typeof nuxt_plugin_iconplugin_b3427158 === 'function') {
-    await nuxt_plugin_iconplugin_b3427158(app.context, inject)
   }
 
   if (typeof nuxt_plugin_axios_a43f4d78 === 'function') {

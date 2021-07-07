@@ -81,7 +81,10 @@ export default {
       }
       this.$swal('Successfully added')
 
-      const response = await this.$axios.$post('/api/categories', data)
+      const response = await this.$axios.$post(
+        'https://pavanatechblog.herokuapp.com/api/categories',
+        data
+      )
       console.log(response)
     },
   },

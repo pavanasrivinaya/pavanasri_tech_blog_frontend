@@ -4,6 +4,7 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
+const _3d85314c = () => interopDefault(import('..\\pages\\Adminpostcreation\\index.vue' /* webpackChunkName: "pages/Adminpostcreation/index" */))
 const _113defb0 = () => interopDefault(import('..\\pages\\categories\\index.vue' /* webpackChunkName: "pages/categories/index" */))
 const _5da7f41f = () => interopDefault(import('..\\pages\\categorypage\\index.vue' /* webpackChunkName: "pages/categorypage/index" */))
 const _f21020fe = () => interopDefault(import('..\\pages\\Client\\index.vue' /* webpackChunkName: "pages/Client/index" */))
@@ -12,7 +13,7 @@ const _24edb042 = () => interopDefault(import('..\\pages\\Admin\\404.vue' /* web
 const _393435d6 = () => interopDefault(import('..\\pages\\Admin\\adminhome.vue' /* webpackChunkName: "pages/Admin/adminhome" */))
 const _2b6523c5 = () => interopDefault(import('..\\pages\\Admin\\categories.vue' /* webpackChunkName: "pages/Admin/categories" */))
 const _674014bc = () => interopDefault(import('..\\pages\\Client\\about.vue' /* webpackChunkName: "pages/Client/about" */))
-const _46cfa6ad = () => interopDefault(import('..\\pages\\posts\\detailpage.vue' /* webpackChunkName: "pages/posts/detailpage" */))
+const _ab7289a0 = () => interopDefault(import('..\\pages\\Adminposts\\_id.vue' /* webpackChunkName: "pages/Adminposts/_id" */))
 const _6c37c3d0 = () => interopDefault(import('..\\pages\\categories\\_id.vue' /* webpackChunkName: "pages/categories/_id" */))
 const _08927247 = () => interopDefault(import('..\\pages\\categorypage\\_id.vue' /* webpackChunkName: "pages/categorypage/_id" */))
 const _39e443ae = () => interopDefault(import('..\\pages\\Client\\_id.vue' /* webpackChunkName: "pages/Client/_id" */))
@@ -30,6 +31,10 @@ export const routerOptions = {
   scrollBehavior,
 
   routes: [{
+    path: "/Adminpostcreation",
+    component: _3d85314c,
+    name: "Adminpostcreation"
+  }, {
     path: "/categories",
     component: _113defb0,
     name: "categories"
@@ -62,9 +67,9 @@ export const routerOptions = {
     component: _674014bc,
     name: "Client-about"
   }, {
-    path: "/posts/detailpage",
-    component: _46cfa6ad,
-    name: "posts-detailpage"
+    path: "/Adminposts/:id?",
+    component: _ab7289a0,
+    name: "Adminposts-id"
   }, {
     path: "/categories/:id",
     component: _6c37c3d0,

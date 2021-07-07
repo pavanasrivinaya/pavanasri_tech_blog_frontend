@@ -1,4 +1,4 @@
-const URL = 'https://pavanasritechblogbackend.herokuapp.com'
+const URL = 'https://pavanatechblog.herokuapp.com'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -10,7 +10,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: '../css/bootstrap.css' },
+      { rel: 'stylesheet', href: '/css/bootstrap.css' },
       { rel: 'stylesheet', href: '/css/font-awesome.min.css' },
       { rel: 'stylesheet', href: '/style.css' },
       { rel: 'stylesheet', href: '/css/responsive.css' },
@@ -64,7 +64,7 @@ export default {
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     proxy: true,
-    baseURL: process.env.PORT || URL,
+    baseURL: URL,
   },
   proxy: {
     '/api': URL,

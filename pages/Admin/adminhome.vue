@@ -33,7 +33,7 @@
                     <div class="post-media">
                       <a href="/detail" title="">
                         <img
-                          :src="post.photo"
+                          :src="`https://pavanatechblog.herokuapp.com/uploads/${post.photo}`"
                           alt=""
                           class="img-fluid postimage"
                         />
@@ -46,7 +46,7 @@
 
                   <div class="blog-meta big-meta col-md-8">
                     <h4>
-                      <nuxt-link :to="`/posts/detailpage/${post._id}`" title="">
+                      <nuxt-link :to="`/Adminposts/${post._id}`" title="">
                         {{ post.title }}
                       </nuxt-link>
                     </h4>

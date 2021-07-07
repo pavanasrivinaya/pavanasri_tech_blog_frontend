@@ -23,7 +23,7 @@
                     <div class="post-media">
                       <a href="#" title="">
                         <img
-                          :src="post.photo"
+                          :src="`https://pavanatechblog.herokuapp.com/uploads/${post.photo}`"
                           alt=""
                           class="img-fluid postimage"
                         />
