@@ -26,60 +26,26 @@
           </div>
 
           <!-- Title dropdown -->
-          <div
-            class="col mb-3"
-            :class="{ 'form-group--error': $v.title.$error }"
-          >
+          <div class="col mb-3">
             <label style="margin-bottom: 0px">Title: </label>
             <input
-              v-model.trim="$v.title.$model"
+              v-model="title"
               type="text"
               class="form-control"
               placeholder="Enter the title"
               style="width: 100%"
-              :class="{
-                'is-invalid': $v.title.$error,
-                'is-valid': !$v.title.$invalid,
-              }"
             />
-            <div class="invalid-feedback">
-              <span v-if="!$v.title.minLength" class="error">
-                Title must have at least
-                {{ $v.title.$params.minLength.min }} letters.
-              </span>
-              <span v-if="!$v.title.maxLength" class="error">
-                Title must have at least
-                {{ $v.title.$params.maxLength.max }} letters.
-              </span>
-            </div>
           </div>
           <!-- description dropdown -->
-          <div
-            class="col mb-3"
-            :class="{ 'form-group--error': $v.description.$error }"
-          >
+          <div class="col mb-3">
             <label style="margin-bottom: 0px">Description </label>
             <textarea
-              v-model.trim="$v.description.$model"
+              v-model="description"
               type="text"
               class="form-control"
               placeholder="Description of the blog"
               style="height: 100px"
-              :class="{
-                'is-invalid': $v.description.$error,
-                'is-valid': !$v.description.$invalid,
-              }"
             />
-            <div class="invalid-feedback">
-              <span v-if="!$v.description.minLength" class="error">
-                Description must have at least
-                {{ $v.description.$params.minLength.min }} letters.
-              </span>
-              <span v-if="!$v.description.maxLength" class="error">
-                Description must have at least
-                {{ $v.description.$params.maxLength.max }} letters.
-              </span>
-            </div>
           </div>
 
           <!-- Photo file -->
@@ -106,26 +72,11 @@
 </template>
 
 <script>
-import { required, minLength, maxLength } from 'vuelidate/lib/validators'
-import { validationMixin } from 'vuelidate'
 import NavBar from '@/components/Admin/NavBar'
 export default {
   components: {
     NavBar,
   },
-  validations: {
-    title: {
-      required,
-      minLength: minLength(2),
-      maxLength: maxLength(30),
-    },
-    description: {
-      required,
-      minLength: minLength(50),
-      maxLength: maxLength(1500),
-    },
-  },
-  mixins: [validationMixin],
   async asyncData({ $axios }) {
     try {
       const categories = $axios.$get('/api/categories')
@@ -145,7 +96,6 @@ export default {
       description: '',
       selectedFile: '',
       fileName: '',
-      submitstatus: null,
     }
   },
   methods: {
@@ -155,12 +105,6 @@ export default {
       this.fileName = event.target.files[0].name
     },
     async onAddPost() {
-      this.$v.$touch()
-      if (this.$v.$invalid) {
-        this.submitstatus = 'FAIL'
-      } else {
-        this.submitstatus = 'SUCCESS'
-      }
       try {
         const data = new FormData()
         data.append('title', this.title)

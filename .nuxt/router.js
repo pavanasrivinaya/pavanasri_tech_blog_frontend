@@ -4,7 +4,6 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _3d85314c = () => interopDefault(import('..\\pages\\Adminpostcreation\\index.vue' /* webpackChunkName: "pages/Adminpostcreation/index" */))
 const _113defb0 = () => interopDefault(import('..\\pages\\categories\\index.vue' /* webpackChunkName: "pages/categories/index" */))
 const _5da7f41f = () => interopDefault(import('..\\pages\\categorypage\\index.vue' /* webpackChunkName: "pages/categorypage/index" */))
 const _f21020fe = () => interopDefault(import('..\\pages\\Client\\index.vue' /* webpackChunkName: "pages/Client/index" */))
@@ -31,10 +30,6 @@ export const routerOptions = {
   scrollBehavior,
 
   routes: [{
-    path: "/Adminpostcreation",
-    component: _3d85314c,
-    name: "Adminpostcreation"
-  }, {
     path: "/categories",
     component: _113defb0,
     name: "categories"

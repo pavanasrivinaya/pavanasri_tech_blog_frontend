@@ -60,7 +60,7 @@
   </div>
 </template>
 <script>
-import NavBar from '@/components/Client/NavBar'
+import NavBar from '@/components/Admin/NavBar'
 export default {
   components: {
     NavBar,
