@@ -19,10 +19,10 @@
         <div id="navbarCollapse" class="ml-5 collapse navbar-collapse space1">
           <ul class="navbar-nav mr-auto space">
             <li class="nav-item">
-              <nuxt-link to="/Client" class="nav-link">Home</nuxt-link>
+              <nuxt-link to="/" class="nav-link">Home</nuxt-link>
             </li>
             <li class="nav-item">
-              <nuxt-link to="/Client/about" class="nav-link">About</nuxt-link>
+              <nuxt-link to="/about" class="nav-link">About</nuxt-link>
             </li>
           </ul>
         </div>

@@ -36,23 +36,20 @@
 
                   <div class="blog-meta big-meta col-md-8">
                     <h4>
-                      <nuxt-link :to="`/Client/${post._id}`" title="">
+                      <NuxtLink :to="`/post/${post._id}`" title="">
                         {{ post.title }}
-                      </nuxt-link>
+                      </NuxtLink>
                     </h4>
                     <p>
                       {{ post.description.substring(0, 50) + '...' }}
                     </p>
                     <small class="firstsmall"
-                      ><a
-                        class="bg-orange"
-                        href="tech-category-01.html"
-                        title=""
-                        >{{ post.category.type }}</a
-                      ></small
+                      ><a class="bg-orange" href="#" title="">{{
+                        post.category.type
+                      }}</a></small
                     >
                     <small
-                      ><a href="/detail" title=""
+                      ><a href="#" title=""
                         >{{ formatDate(post.created) }}
                       </a></small
                     >

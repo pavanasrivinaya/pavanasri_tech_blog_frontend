@@ -31,7 +31,7 @@
                 >
                   <div class="col-md-4">
                     <div class="post-media">
-                      <a href="/detail" title="">
+                      <a href="" title="">
                         <img
                           :src="`https://pavanatechblog.herokuapp.com/uploads/${post.photo}`"
                           alt=""
@@ -62,7 +62,7 @@
                       ></small
                     >
                     <small
-                      ><a href="/detail" title=""
+                      ><a href="" title=""
                         >{{ formatDate(post.created) }}
                       </a></small
                     >

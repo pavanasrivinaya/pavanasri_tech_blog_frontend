@@ -9,7 +9,7 @@
               <div class="blog-title-area text-center">
                 <ol class="breadcrumb hidden-xs-down">
                   <li class="breadcrumb-item">
-                    <nuxt-link to="/Admin/adminhome">Home</nuxt-link>
+                    <nuxt-link to="/Admin/home">Home</nuxt-link>
                   </li>
                   <li class="breadcrumb-item active">
                     {{ post.title }}

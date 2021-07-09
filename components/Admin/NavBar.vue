@@ -23,9 +23,7 @@
         <div id="navbarCollapse" class="ml-5 collapse navbar-collapse space1">
           <ul class="navbar-nav mr-auto space">
             <li class="nav-item">
-              <nuxt-link to="/Admin/adminhome" class="nav-link"
-                >Blogs</nuxt-link
-              >
+              <nuxt-link to="/Admin/home" class="nav-link">Blogs</nuxt-link>
             </li>
             <li class="nav-item">
               <nuxt-link to="/Admin/categories" class="nav-link"
@@ -33,10 +31,12 @@
               >
             </li>
             <li class="nav-item">
-              <nuxt-link to="/posts" class="nav-link">Add Post</nuxt-link>
+              <nuxt-link to="/create_posts" class="nav-link"
+                >Add Post</nuxt-link
+              >
             </li>
             <li class="nav-item">
-              <nuxt-link to="/categories" class="nav-link"
+              <nuxt-link to="/create_category" class="nav-link"
                 >Add category</nuxt-link
               >
             </li>

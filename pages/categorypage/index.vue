@@ -31,7 +31,7 @@
                 >
                   <div class="col-md-4">
                     <div class="post-media">
-                      <a href="/detail" title="">
+                      <a href="" title="">
                         <img
                           :src="post.photo"
                           alt=""
@@ -46,7 +46,7 @@
 
                   <div class="blog-meta big-meta col-md-8">
                     <h4>
-                      <a href="/detail" title="">
+                      <a href="" title="">
                         {{ post.title }}
                       </a>
                     </h4>
@@ -62,7 +62,7 @@
                       ></small
                     >
                     <small
-                      ><a href="/detail" title=""
+                      ><a href="" title=""
                         >{{ formatDate(post.created) }}
                       </a></small
                     >
