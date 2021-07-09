@@ -52,8 +52,19 @@
   ],
   "link": [
     {
+      "hid": "shortcut-icon",
+      "rel": "shortcut icon",
+      "href": "/_nuxt/icons/icon_64x64.5044c4.png"
+    },
+    {
+      "hid": "apple-touch-icon",
+      "rel": "apple-touch-icon",
+      "href": "/_nuxt/icons/icon_512x512.5044c4.png",
+      "sizes": "512x512"
+    },
+    {
       "rel": "manifest",
-      "href": "/_nuxt/manifest.29a49e07.json",
+      "href": "/_nuxt/manifest.1f56ea31.json",
       "hid": "manifest"
     }
   ],

@@ -3,78 +3,91 @@
     "name": "categories",
     "path": "/categories",
     "component": "F:\\\\pavanablog\\\\client\\\\pages\\\\categories\\\\index.vue",
-    "chunkName": "pages/categories/index"
+    "chunkName": "pages/categories/index",
+    "_name": "_113defb0"
   },
   {
     "name": "categorypage",
     "path": "/categorypage",
     "component": "F:\\\\pavanablog\\\\client\\\\pages\\\\categorypage\\\\index.vue",
-    "chunkName": "pages/categorypage/index"
+    "chunkName": "pages/categorypage/index",
+    "_name": "_5da7f41f"
   },
   {
     "name": "Client",
     "path": "/Client",
     "component": "F:\\\\pavanablog\\\\client\\\\pages\\\\Client\\\\index.vue",
-    "chunkName": "pages/Client/index"
+    "chunkName": "pages/Client/index",
+    "_name": "_f21020fe"
   },
   {
     "name": "posts",
     "path": "/posts",
     "component": "F:\\\\pavanablog\\\\client\\\\pages\\\\posts\\\\index.vue",
-    "chunkName": "pages/posts/index"
+    "chunkName": "pages/posts/index",
+    "_name": "_69d428d6"
   },
   {
     "name": "Admin-404",
     "path": "/Admin/404",
     "component": "F:\\\\pavanablog\\\\client\\\\pages\\\\Admin\\\\404.vue",
-    "chunkName": "pages/Admin/404"
+    "chunkName": "pages/Admin/404",
+    "_name": "_24edb042"
   },
   {
     "name": "Admin-adminhome",
     "path": "/Admin/adminhome",
     "component": "F:\\\\pavanablog\\\\client\\\\pages\\\\Admin\\\\adminhome.vue",
-    "chunkName": "pages/Admin/adminhome"
+    "chunkName": "pages/Admin/adminhome",
+    "_name": "_393435d6"
   },
   {
     "name": "Admin-categories",
     "path": "/Admin/categories",
     "component": "F:\\\\pavanablog\\\\client\\\\pages\\\\Admin\\\\categories.vue",
-    "chunkName": "pages/Admin/categories"
+    "chunkName": "pages/Admin/categories",
+    "_name": "_2b6523c5"
   },
   {
     "name": "Client-about",
     "path": "/Client/about",
     "component": "F:\\\\pavanablog\\\\client\\\\pages\\\\Client\\\\about.vue",
-    "chunkName": "pages/Client/about"
+    "chunkName": "pages/Client/about",
+    "_name": "_674014bc"
   },
   {
     "name": "Adminposts-id",
     "path": "/Adminposts/:id?",
     "component": "F:\\\\pavanablog\\\\client\\\\pages\\\\Adminposts\\\\_id.vue",
-    "chunkName": "pages/Adminposts/_id"
+    "chunkName": "pages/Adminposts/_id",
+    "_name": "_ab7289a0"
   },
   {
     "name": "categories-id",
     "path": "/categories/:id",
     "component": "F:\\\\pavanablog\\\\client\\\\pages\\\\categories\\\\_id.vue",
-    "chunkName": "pages/categories/_id"
+    "chunkName": "pages/categories/_id",
+    "_name": "_6c37c3d0"
   },
   {
     "name": "categorypage-id",
     "path": "/categorypage/:id",
     "component": "F:\\\\pavanablog\\\\client\\\\pages\\\\categorypage\\\\_id.vue",
-    "chunkName": "pages/categorypage/_id"
+    "chunkName": "pages/categorypage/_id",
+    "_name": "_08927247"
   },
   {
     "name": "Client-id",
     "path": "/Client/:id",
     "component": "F:\\\\pavanablog\\\\client\\\\pages\\\\Client\\\\_id.vue",
-    "chunkName": "pages/Client/_id"
+    "chunkName": "pages/Client/_id",
+    "_name": "_39e443ae"
   },
   {
     "name": "posts-id",
     "path": "/posts/:id",
     "component": "F:\\\\pavanablog\\\\client\\\\pages\\\\posts\\\\_id.vue",
-    "chunkName": "pages/posts/_id"
+    "chunkName": "pages/posts/_id",
+    "_name": "_44e3cf3d"
   }
 ]
