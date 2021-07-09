@@ -77,6 +77,16 @@ export default {
       console.log(err)
     }
   },
+  head: {
+    title: 'TechBlog || Admin Post details',
+    meta: [
+      {
+        hid: 'AdminPostdetails',
+        name: 'AdminPostdetails',
+        content: 'Admin_post_details_page which contains the posts details',
+      },
+    ],
+  },
   methods: {
     formatDate(date) {
       const options = { year: 'numeric', month: 'long', day: 'numeric' }

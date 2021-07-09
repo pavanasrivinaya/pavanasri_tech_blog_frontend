@@ -21,6 +21,16 @@ export default {
   components: {
     NavBar,
   },
+  head: {
+    title: 'TechBlog website || About Page',
+    meta: [
+      {
+        hid: 'About Page',
+        name: 'About Page',
+        content: 'TechBlog website About page',
+      },
+    ],
+  },
 }
 </script>
 <style>

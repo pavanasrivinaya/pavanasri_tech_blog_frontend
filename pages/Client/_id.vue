@@ -109,6 +109,16 @@ export default {
       console.log(err)
     }
   },
+  head: {
+    title: 'TechBlog website || Blog detail page',
+    meta: [
+      {
+        hid: 'Blog detail page',
+        name: 'Blog detail page',
+        content: 'TechBlog website Blog detail page',
+      },
+    ],
+  },
   methods: {
     formatDate(date) {
       const options = { year: 'numeric', month: 'long', day: 'numeric' }

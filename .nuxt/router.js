@@ -96,7 +96,7 @@ export const routerOptions = {
 
   routes: [
     {
-      path: '/create_category',
+      path: '/categories',
       component: _113defb0,
       name: 'categories',
     },
@@ -111,7 +111,7 @@ export const routerOptions = {
       name: 'Client',
     },
     {
-      path: '/create_posts',
+      path: '/posts',
       component: _69d428d6,
       name: 'posts',
     },
@@ -121,7 +121,7 @@ export const routerOptions = {
       name: 'Admin-404',
     },
     {
-      path: '/Admin/home',
+      path: '/Admin/adminhome',
       component: _393435d6,
       name: 'Admin-adminhome',
     },
@@ -151,7 +151,7 @@ export const routerOptions = {
       name: 'categorypage-id',
     },
     {
-      path: '/post/:id',
+      path: '/Client/:id',
       component: _39e443ae,
       name: 'Client-id',
     },

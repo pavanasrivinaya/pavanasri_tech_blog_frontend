@@ -1,9 +1,12 @@
 const URL = 'https://pavanatechblog.herokuapp.com'
 export default {
   target: 'static',
+  performance: {
+    hints: false,
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'client',
+    title: 'TechBlog website',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

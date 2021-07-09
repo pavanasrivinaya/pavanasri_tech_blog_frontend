@@ -98,6 +98,16 @@ export default {
       fileName: '',
     }
   },
+  head: {
+    title: 'TechBlog || Post creation',
+    meta: [
+      {
+        hid: 'Post creation',
+        name: 'Post creation',
+        content: 'Creation of post',
+      },
+    ],
+  },
   methods: {
     onFileSelected(event) {
       this.selectedFile = event.target.files[0]

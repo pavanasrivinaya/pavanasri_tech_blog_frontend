@@ -125,7 +125,6 @@
     </section>
   </div>
 </template>
-
 <script>
 import NavBar from '@/components/Admin/NavBar'
 import * as axios from 'axios'
@@ -148,6 +147,16 @@ export default {
     return {
       search: '',
     }
+  },
+  head: {
+    title: 'TechBlog || AdminHomepage',
+    meta: [
+      {
+        hid: 'AdminHomePage',
+        name: 'AdminHomePage',
+        content: 'Admin home page which contains the posts',
+      },
+    ],
   },
   computed: {
     filteredPosts() {

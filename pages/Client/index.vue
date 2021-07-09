@@ -176,6 +176,16 @@ export default {
       search: '',
     }
   },
+  head: {
+    title: 'TechBlog website',
+    meta: [
+      {
+        hid: 'TechBlog website',
+        name: 'TechBlog website',
+        content: 'TechBlog website Home page',
+      },
+    ],
+  },
   computed: {
     filteredPosts() {
       return this.posts.filter((post) => {

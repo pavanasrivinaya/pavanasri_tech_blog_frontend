@@ -150,6 +150,16 @@ export default {
       submitstatus: null,
     }
   },
+  head: {
+    title: 'TechBlog || Post detail page',
+    meta: [
+      {
+        hid: 'Post detail page',
+        name: 'Post detail page',
+        content: 'post detail page',
+      },
+    ],
+  },
   methods: {
     onFileSelected(event) {
       this.selectedFile = event.target.files[0]

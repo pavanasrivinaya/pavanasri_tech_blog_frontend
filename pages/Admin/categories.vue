@@ -105,6 +105,16 @@ export default {
       search: '',
     }
   },
+  head: {
+    title: 'TechBlog || Admin categories page',
+    meta: [
+      {
+        hid: 'AdminCategories',
+        name: 'AdminCategories',
+        content: 'Admin Categories page which contains all categories',
+      },
+    ],
+  },
   computed: {
     filteredCategories() {
       return this.categories.filter((category) => {
